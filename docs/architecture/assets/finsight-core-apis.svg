@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
+  <title id="title">FinSight AI core APIs and their importance</title>
+  <desc id="description">A 16 by 9 diagram grouping FinSight APIs into access, deterministic investigation, AI explanation, and human approval, with the purpose of each group and supporting endpoints.</desc>
+  <defs>
+    <marker id="api-arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L10,6 L1,11" fill="none" stroke="#70828a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .eyebrow { font: 700 15px 'Aptos', 'Segoe UI', sans-serif; letter-spacing: 1.5px; }
+      .title { font: 700 38px 'Aptos Display', 'Segoe UI', sans-serif; }
+      .subtitle { font: 400 18px 'Aptos', 'Segoe UI', sans-serif; }
+      .number { font: 700 13px 'Aptos', 'Segoe UI', sans-serif; letter-spacing: 1px; }
+      .heading { font: 700 22px 'Aptos Display', 'Segoe UI', sans-serif; }
+      .api { font: 600 12px 'Cascadia Code', 'Consolas', monospace; }
+      .why { font: 700 12px 'Aptos', 'Segoe UI', sans-serif; letter-spacing: 1px; }
+      .copy { font: 400 15px 'Aptos', 'Segoe UI', sans-serif; }
+      .support-title { font: 700 14px 'Aptos', 'Segoe UI', sans-serif; letter-spacing: 1px; }
+      .support-api { font: 600 13px 'Cascadia Code', 'Consolas', monospace; }
+      .support-copy { font: 400 13px 'Aptos', 'Segoe UI', sans-serif; }
+      .footer { font: 500 14px 'Aptos', 'Segoe UI', sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#f2f6f4"/>
+  <rect x="64" y="48" width="8" height="106" rx="4" fill="#087e78"/>
+  <text x="92" y="67" class="eyebrow" fill="#087e78">FINSIGHT AI  /  API MAP</text>
+  <text x="92" y="117" class="title" fill="#17313c">Core APIs: each step has a clear job</text>
+  <text x="92" y="151" class="subtitle" fill="#5e737d">Authenticate. Investigate with rules. Explain with AI. Decide with a human.</text>
+
+  <text x="64" y="218" class="number" fill="#627780">THE OPERATIONAL API JOURNEY</text>
+  <line x1="64" y1="232" x2="1536" y2="232" stroke="#d6e0df" stroke-width="1.5"/>
+
+  <g>
+    <rect x="64" y="267" width="344" height="392" rx="12" fill="#ffffff" stroke="#cfdbdf" stroke-width="1.5"/>
+    <rect x="64" y="267" width="344" height="8" rx="4" fill="#3767a6"/>
+    <circle cx="101" cy="315" r="18" fill="#eaf1fb"/>
+    <text x="101" y="320" text-anchor="middle" class="number" fill="#315f9b">01</text>
+    <text x="88" y="361" class="heading" fill="#17313c">Access</text>
+    <text x="88" y="401" class="api" fill="#315f9b">POST /auth/token</text>
+    <text x="88" y="426" class="copy" fill="#4d626c">Get a bearer token.</text>
+    <text x="88" y="461" class="api" fill="#315f9b">POST /auth/users</text>
+    <text x="88" y="486" class="copy" fill="#4d626c">Administrator-only onboarding.</text>
+    <line x1="88" y1="514" x2="384" y2="514" stroke="#e1e8e8" stroke-width="1.2"/>
+    <text x="88" y="545" class="why" fill="#315f9b">WHY IT MATTERS</text>
+    <text x="88" y="576" class="copy" fill="#4d626c">Identifies the caller and role</text>
+    <text x="88" y="601" class="copy" fill="#4d626c">before protected actions are run.</text>
+  </g>
+
+  <line x1="412" y1="466" x2="439" y2="466" stroke="#70828a" stroke-width="2" marker-end="url(#api-arrow)"/>
+
+  <g>
+    <rect x="450" y="267" width="344" height="392" rx="12" fill="#ffffff" stroke="#cfdbdf" stroke-width="1.5"/>
+    <rect x="450" y="267" width="344" height="8" rx="4" fill="#c47425"/>
+    <circle cx="487" cy="315" r="18" fill="#fff3df"/>
+    <text x="487" y="320" text-anchor="middle" class="number" fill="#9a5c1b">02</text>
+    <text x="474" y="361" class="heading" fill="#17313c">Investigate</text>
+    <text x="474" y="401" class="api" fill="#9a5c1b">POST /investigations/settlements/{id}</text>
+    <text x="474" y="426" class="copy" fill="#4d626c">Reconcile and create a case.</text>
+    <text x="474" y="461" class="api" fill="#9a5c1b">GET /investigations/</text>
+    <text x="474" y="486" class="api" fill="#9a5c1b">GET /investigations/{id}</text>
+    <line x1="474" y1="514" x2="770" y2="514" stroke="#e1e8e8" stroke-width="1.2"/>
+    <text x="474" y="545" class="why" fill="#9a5c1b">WHY IT MATTERS</text>
+    <text x="474" y="576" class="copy" fill="#4d626c">Rules establish the financial facts;</text>
+    <text x="474" y="601" class="copy" fill="#4d626c">the case keeps causes and evidence.</text>
+  </g>
+
+  <line x1="798" y1="466" x2="825" y2="466" stroke="#70828a" stroke-width="2" marker-end="url(#api-arrow)"/>
+
+  <g>
+    <rect x="836" y="267" width="344" height="392" rx="12" fill="#ffffff" stroke="#a7d4ca" stroke-width="1.7"/>
+    <rect x="836" y="267" width="344" height="8" rx="4" fill="#087e78"/>
+    <circle cx="873" cy="315" r="18" fill="#e4f4ef"/>
+    <text x="873" y="320" text-anchor="middle" class="number" fill="#087e78">03</text>
+    <text x="860" y="361" class="heading" fill="#17313c">Explain with AI</text>
+    <text x="860" y="401" class="api" fill="#087e78">POST /ai/investigations/{id}/explanation</text>
+    <text x="860" y="436" class="copy" fill="#4d626c">Returns explanation, policy sources,</text>
+    <text x="860" y="461" class="copy" fill="#4d626c">and an audit_run_id.</text>
+    <line x1="860" y1="489" x2="1156" y2="489" stroke="#e1e8e8" stroke-width="1.2"/>
+    <text x="860" y="522" class="why" fill="#087e78">WHY IT MATTERS</text>
+    <text x="860" y="553" class="copy" fill="#4d626c">Makes linked evidence easier to</text>
+    <text x="860" y="578" class="copy" fill="#4d626c">understand; does not change finance.</text>
+    <text x="860" y="619" class="support-copy" fill="#087e78">RAG adds approved policy context.</text>
+  </g>
+
+  <line x1="1184" y1="466" x2="1211" y2="466" stroke="#70828a" stroke-width="2" marker-end="url(#api-arrow)"/>
+
+  <g>
+    <rect x="1222" y="267" width="314" height="392" rx="12" fill="#ffffff" stroke="#cfdbdf" stroke-width="1.5"/>
+    <rect x="1222" y="267" width="314" height="8" rx="4" fill="#54804c"/>
+    <circle cx="1259" cy="315" r="18" fill="#edf5ec"/>
+    <text x="1259" y="320" text-anchor="middle" class="number" fill="#426b3d">04</text>
+    <text x="1246" y="361" class="heading" fill="#17313c">Human review</text>
+    <text x="1246" y="401" class="api" fill="#426b3d">POST .../submit-for-approval</text>
+    <text x="1246" y="436" class="api" fill="#426b3d">POST .../decision</text>
+    <text x="1246" y="461" class="api" fill="#426b3d">GET .../approval-events</text>
+    <line x1="1246" y1="489" x2="1512" y2="489" stroke="#e1e8e8" stroke-width="1.2"/>
+    <text x="1246" y="522" class="why" fill="#426b3d">WHY IT MATTERS</text>
+    <text x="1246" y="553" class="copy" fill="#4d626c">A reviewer owns the outcome;</text>
+    <text x="1246" y="578" class="copy" fill="#4d626c">comments and transitions are stored.</text>
+    <text x="1246" y="619" class="support-copy" fill="#426b3d">Submitter cannot approve own case.</text>
+  </g>
+
+  <rect x="64" y="701" width="1472" height="107" rx="12" fill="#183842"/>
+  <text x="92" y="738" class="support-title" fill="#92d7c8">SUPPORTING APIS</text>
+  <text x="92" y="775" class="support-api" fill="#ffffff">GET /health</text>
+  <text x="245" y="775" class="support-copy" fill="#d8e4e5">service check</text>
+  <line x1="438" y1="731" x2="438" y2="789" stroke="#47636a" stroke-width="1.2"/>
+  <text x="472" y="775" class="support-api" fill="#ffffff">POST /auth/users</text>
+  <text x="668" y="775" class="support-copy" fill="#d8e4e5">admin provisioning</text>
+  <line x1="900" y1="731" x2="900" y2="789" stroke="#47636a" stroke-width="1.2"/>
+  <text x="934" y="775" class="support-api" fill="#ffffff">PUT /investigations/{id}/</text>
+  <text x="1192" y="775" class="support-copy" fill="#f0c48a">deprecated: 409; use review APIs</text>
+
+  <text x="64" y="854" class="footer" fill="#5e737d">Current stable demo uses the mock explanation provider; the API, deterministic investigation, RAG retrieval, audit, and approval flows are implemented.</text>
+</svg>

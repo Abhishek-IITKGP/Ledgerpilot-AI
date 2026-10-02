@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
+  <title id="title">FinSight AI proof of concept: from cash mismatch to a controlled decision</title>
+  <desc id="description">A presentation flow showing financial activity, deterministic reconciliation, an evidence-backed case, AI-assisted explanation, and human review, with operational value and safety boundaries.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L10,6 L1,11" fill="none" stroke="#70828a" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <style>
+      .eyebrow { font: 700 16px 'Aptos', 'Segoe UI', sans-serif; letter-spacing: 1.4px; }
+      .title { font: 700 38px 'Aptos Display', 'Segoe UI', sans-serif; }
+      .subtitle { font: 400 19px 'Aptos', 'Segoe UI', sans-serif; }
+      .step { font: 700 13px 'Aptos', 'Segoe UI', sans-serif; letter-spacing: 1px; }
+      .card-title { font: 700 23px 'Aptos Display', 'Segoe UI', sans-serif; }
+      .body { font: 400 16px 'Aptos', 'Segoe UI', sans-serif; }
+      .small { font: 400 14px 'Aptos', 'Segoe UI', sans-serif; }
+      .band-title { font: 700 15px 'Aptos', 'Segoe UI', sans-serif; letter-spacing: 1px; }
+      .band-copy { font: 500 16px 'Aptos', 'Segoe UI', sans-serif; }
+      .value-title { font: 700 17px 'Aptos', 'Segoe UI', sans-serif; }
+      .value-copy { font: 400 14px 'Aptos', 'Segoe UI', sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#f2f6f4"/>
+  <rect x="64" y="48" width="8" height="110" rx="4" fill="#087e78"/>
+  <text x="92" y="68" class="eyebrow" fill="#087e78">FINSIGHT AI  /  FINANCIAL OPERATIONS POC</text>
+  <text x="92" y="119" class="title" fill="#17313c">From cash mismatch to a controlled decision</text>
+  <text x="92" y="153" class="subtitle" fill="#5e737d">Evidence first. AI-assisted explanation. Human-owned action.</text>
+
+  <text x="64" y="225" class="step" fill="#627780">HOW THE POC WORKS</text>
+  <line x1="64" y1="239" x2="1536" y2="239" stroke="#d6e0df" stroke-width="1.5"/>
+
+  <g>
+    <rect x="64" y="275" width="264" height="260" rx="12" fill="#ffffff" stroke="#cfdbdf" stroke-width="1.5"/>
+    <rect x="64" y="275" width="264" height="8" rx="4" fill="#3767a6"/>
+    <circle cx="96" cy="319" r="17" fill="#eaf1fb"/>
+    <text x="96" y="324" text-anchor="middle" class="step" fill="#315f9b">01</text>
+    <text x="88" y="370" class="card-title" fill="#17313c">Financial activity</text>
+    <text x="88" y="411" class="body" fill="#4d626c">Settlement instructions</text>
+    <text x="88" y="441" class="body" fill="#4d626c">Transactions and executions</text>
+    <text x="88" y="471" class="body" fill="#4d626c">Recorded cash movements</text>
+    <text x="88" y="510" class="small" fill="#71848b">Existing operational records</text>
+  </g>
+
+  <line x1="332" y1="405" x2="353" y2="405" stroke="#70828a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="364" y="275" width="264" height="260" rx="12" fill="#ffffff" stroke="#cfdbdf" stroke-width="1.5"/>
+    <rect x="364" y="275" width="264" height="8" rx="4" fill="#c47425"/>
+    <circle cx="396" cy="319" r="17" fill="#fff3df"/>
+    <text x="396" y="324" text-anchor="middle" class="step" fill="#9a5c1b">02</text>
+    <text x="388" y="370" class="card-title" fill="#17313c">Reconciliation</text>
+    <text x="388" y="411" class="body" fill="#4d626c">Compare expected and</text>
+    <text x="388" y="437" class="body" fill="#4d626c">actual cash</text>
+    <text x="388" y="475" class="body" fill="#4d626c">Apply repeatable rules</text>
+    <text x="388" y="510" class="small" fill="#9a5c1b">Financial amounts stay deterministic</text>
+  </g>
+
+  <line x1="632" y1="405" x2="653" y2="405" stroke="#70828a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="664" y="275" width="264" height="260" rx="12" fill="#ffffff" stroke="#cfdbdf" stroke-width="1.5"/>
+    <rect x="664" y="275" width="264" height="8" rx="4" fill="#bc594d"/>
+    <circle cx="696" cy="319" r="17" fill="#faece9"/>
+    <text x="696" y="324" text-anchor="middle" class="step" fill="#a64d42">03</text>
+    <text x="688" y="370" class="card-title" fill="#17313c">Investigation case</text>
+    <text x="688" y="411" class="body" fill="#4d626c">Root cause and impact</text>
+    <text x="688" y="441" class="body" fill="#4d626c">Supporting evidence</text>
+    <text x="688" y="471" class="body" fill="#4d626c">Suggested next step</text>
+    <text x="688" y="510" class="small" fill="#71848b">One traceable case record</text>
+  </g>
+
+  <line x1="932" y1="405" x2="953" y2="405" stroke="#70828a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="964" y="275" width="264" height="260" rx="12" fill="#ffffff" stroke="#a7d4ca" stroke-width="1.7"/>
+    <rect x="964" y="275" width="264" height="8" rx="4" fill="#087e78"/>
+    <circle cx="996" cy="319" r="17" fill="#e4f4ef"/>
+    <text x="996" y="324" text-anchor="middle" class="step" fill="#087e78">04</text>
+    <text x="988" y="370" class="card-title" fill="#17313c">AI assistance</text>
+    <text x="988" y="411" class="body" fill="#4d626c">Explain linked evidence</text>
+    <text x="988" y="441" class="body" fill="#4d626c">Retrieve approved guidance</text>
+    <text x="988" y="471" class="body" fill="#4d626c">Suggest prevention with sources</text>
+    <text x="988" y="510" class="small" fill="#087e78">Read and explain; never write finance</text>
+  </g>
+
+  <line x1="1236" y1="405" x2="1257" y2="405" stroke="#70828a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="1268" y="275" width="264" height="260" rx="12" fill="#ffffff" stroke="#cfdbdf" stroke-width="1.5"/>
+    <rect x="1268" y="275" width="264" height="8" rx="4" fill="#54804c"/>
+    <circle cx="1300" cy="319" r="17" fill="#edf5ec"/>
+    <text x="1300" y="324" text-anchor="middle" class="step" fill="#426b3d">05</text>
+    <text x="1292" y="370" class="card-title" fill="#17313c">Human review</text>
+    <text x="1292" y="411" class="body" fill="#4d626c">Approve or reject</text>
+    <text x="1292" y="441" class="body" fill="#4d626c">Request more evidence</text>
+    <text x="1292" y="471" class="body" fill="#4d626c">Record reviewer comment</text>
+    <text x="1292" y="510" class="small" fill="#54804c">Reviewer owns the decision</text>
+  </g>
+
+  <rect x="64" y="582" width="1472" height="132" rx="12" fill="#183842"/>
+  <text x="92" y="617" class="band-title" fill="#92d7c8">THE CONTROL PROMISE</text>
+  <line x1="92" y1="634" x2="1508" y2="634" stroke="#47636a" stroke-width="1"/>
+  <text x="92" y="672" class="band-copy" fill="#ffffff">Rules establish financial facts.</text>
+  <text x="546" y="672" class="band-copy" fill="#ffffff">AI explains evidence and policy.</text>
+  <text x="1032" y="672" class="band-copy" fill="#ffffff">A person authorizes the outcome.</text>
+
+  <text x="64" y="764" class="step" fill="#627780">POC VALUE</text>
+  <text x="64" y="797" class="value-title" fill="#17313c">Less manual record matching</text>
+  <text x="64" y="822" class="value-copy" fill="#5e737d">Bring linked financial facts into one investigation.</text>
+
+  <text x="565" y="797" class="value-title" fill="#17313c">More consistent explanations</text>
+  <text x="565" y="822" class="value-copy" fill="#5e737d">Ground the narrative in recorded evidence and policies.</text>
+
+  <text x="1080" y="797" class="value-title" fill="#17313c">A traceable human decision</text>
+  <text x="1080" y="822" class="value-copy" fill="#5e737d">Keep AI output, comments, and review history together.</text>
+
+  <text x="64" y="868" class="small" fill="#71848b">POC note: the stable demo uses a deterministic mock explanation provider; live LLM availability is external.</text>
+  <text x="1536" y="868" text-anchor="end" class="small" fill="#71848b">FINSIGHT AI  |  16:9 VECTOR</text>
+</svg>

@@ -19,6 +19,14 @@ portfolio, settlement and cash-related issues.
 - Docker
 - Cloud Deployment
 
+## Database setup scripts
+
+Database scripts are organized under `scripts/`: schema/migration SQL lives in
+`scripts/migrations/`, and reusable roles/permissions lookup data lives in
+`scripts/seeds/reference/`. See [scripts/README.md](scripts/README.md) for
+prerequisites and apply order. Scenario-specific financial samples and demo
+policy text are not part of the standard database bootstrap.
+
 ## Architecture diagrams
 
 The project has audience-specific diagrams for the technical/API flow,
@@ -36,12 +44,8 @@ prompt version, a structured input snapshot and SHA-256 hash, outcome, duration,
 and structured output or a safe failure category. The database trigger blocks
 updates, deletes, and truncation of audit rows.
 
-Apply `scripts/migrations/ai.explanation_runs.sql` after the investigation and
-authentication schemas have been created:
-
-```powershell
-psql -h localhost -U postgres -d finsight -f scripts/migrations/ai.explanation_runs.sql
-```
+Apply the migration in the order documented in [scripts/README.md](scripts/README.md)
+after the base investigation, financial, and authentication tables exist.
 
 To inspect run metadata without selecting the stored financial snapshots:
 
@@ -73,16 +77,12 @@ return preventive actions only with citations that exactly match retrieved
 policy references. This first version is lexical RAG; it does not use vector
 embeddings and may miss semantically related wording.
 
-After the core financial and authentication schemas exist, apply:
-
-```powershell
-psql -h localhost -U postgres -d finsight -f scripts/migrations/ai.policy_documents.sql
-psql -h localhost -U postgres -d finsight -f scripts/seed_ai_policy_examples.sql
-```
-
-The seeded policies are demonstration examples, not legal, regulatory, or
-production operating guidance. Replace them with documents reviewed and
-approved by your organization before using the recommendations operationally.
+Apply the policy-document migration in the order documented in
+[scripts/README.md](scripts/README.md). The checked-in seed contains role and
+permission lookup data only. It does not create users, use shared default
+passwords, or insert scenario-specific financial records. Load
+organization-approved policy documents through your controlled data-ingestion
+process before using policy-based recommendations operationally.
 
 ## Human approval workflow
 
