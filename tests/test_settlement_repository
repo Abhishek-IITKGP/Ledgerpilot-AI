@@ -1,0 +1,44 @@
+from decimal import Decimal
+
+from app.financial.models import SettlementCashData
+from app.investigation.models import SettlementEvidence
+from app.database.repositories.settlement_repository import (
+    SettlementRepository
+)
+
+
+def test_get_investigation_data(
+    db_connection,
+    test_settlement,
+    test_transaction
+):
+
+    repository = SettlementRepository(
+        db_connection
+    )
+
+    result = repository.get_investigation_data(
+        test_settlement
+    )
+
+    assert isinstance(
+        result,
+        SettlementEvidence
+    )
+
+    assert result.settlement_id == test_settlement
+
+    assert result.transaction_id == test_transaction
+
+    assert result.settlement_type == "CASH_RECEIVABLE"
+
+    assert result.expected_cash == Decimal("11000.00")
+
+    assert result.settled_cash == Decimal("0.00")
+
+    assert result.status == "FAILED"
+
+    assert (
+        result.failure_reason
+        == "INVALID_SETTLEMENT_INSTRUCTION"
+    )
